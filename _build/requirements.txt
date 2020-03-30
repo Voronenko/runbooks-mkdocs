@@ -1,0 +1,4 @@
+diagrams==0.8.0
+mkdocs==1.1
+mkdocs-build-plantuml-plugin==1.4.0
+plantuml-markdown==3.2.2

@@ -1,0 +1,19 @@
+site_name: project-mkdocs
+
+plugins:
+  - build_plantuml:
+      render: "server"                             # "local" for local rendering
+      bin_path: "plantuml"                         # ignored when render: server
+      server: "http://www.plantuml.com/plantuml"   # offical plantuml server
+      output_format: "svg"                         # or "png"
+      diagram_root: "docs/diagrams"
+      output_folder: "out"
+      input_folder: "src"
+
+markdown_extensions:
+  - toc:
+      permalink: True
+  - nl2br
+  - fenced_code
+  - plantuml_markdown:
+

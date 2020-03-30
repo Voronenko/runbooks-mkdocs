@@ -1,0 +1,15 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+mkdocs = "==1.1"
+diagrams = "==0.8.0"
+mkdocs-build-plantuml-plugin = "==1.4.0"
+plantuml-markdown = "==3.2.2"
+
+[requires]
+python_version = "3.7"
