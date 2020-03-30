@@ -9,6 +9,11 @@ plugins:
       diagram_root: "docs/diagrams"
       output_folder: "out"
       input_folder: "src"
+  - exclude:
+      glob:
+        - diagrams/**/*.py
+      regex:
+        - '.*\.(tmp|bin|tar)$'
 
 markdown_extensions:
   - toc:
