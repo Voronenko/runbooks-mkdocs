@@ -14,11 +14,16 @@ plugins:
         - diagrams/**/*.py
       regex:
         - '.*\.(tmp|bin|tar)$'
-
+  - macros
+  - mknotebooks:
+      execute: false
+      preamble: "preamble.py"
+      write_markdown: true
+  - autolinks 
 markdown_extensions:
   - toc:
       permalink: True
   - nl2br
   - fenced_code
   - plantuml_markdown:
-
+  - codehilite

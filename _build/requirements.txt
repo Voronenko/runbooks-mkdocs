@@ -1,5 +1,8 @@
 diagrams==0.8.0
 mkdocs==1.1
+mkdocs-autolinks-plugin==0.2.0
 mkdocs-build-plantuml-plugin==1.4.0
 mkdocs-exclude==1.0.2
+mkdocs-macros-plugin==0.4.4
+mknotebooks==0.3.5
 plantuml-markdown==3.2.2

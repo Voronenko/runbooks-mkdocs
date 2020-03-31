@@ -24,3 +24,5 @@ Bob->Alice : hello
 ```plantuml format="png" classes="uml myDiagram" alt="My super diagram placeholder" title="My super diagram"
 Bob<-Alice : hello
 ```
+
+{{ macros_info() }}
