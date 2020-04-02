@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cece1f23167a21c7cfe4e2fb7c83955c17b194d75d22454dad8f88eb0d70f9c9"
+            "sha256": "54b0481c1be7aebe891bc1e78999be35b794ab40dbe91c804134a71043e00eb1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -214,6 +214,13 @@
             "index": "pypi",
             "version": "==0.2.0"
         },
+        "mkdocs-blog-plugin": {
+            "hashes": [
+                "sha256:0fb4633aed7deb43ff79d52caa47b890779ed2218aac2f94b14abce3075b62c6"
+            ],
+            "index": "pypi",
+            "version": "==0.21"
+        },
         "mkdocs-build-plantuml-plugin": {
             "hashes": [
                 "sha256:0343499c2688897d2c51008ba09bad16836b72bf7b362364e7856997df5e7c33",
@@ -236,6 +243,21 @@
             ],
             "index": "pypi",
             "version": "==0.4.4"
+        },
+        "mkdocs-material": {
+            "hashes": [
+                "sha256:1d486635b03f5a2ec87325842f7b10c7ae7daa0eef76b185572eece6a6ea212c",
+                "sha256:7f3afa0a09c07d0b89a6a9755fdb00513aee8f0cec3538bb903325c80f66f444"
+            ],
+            "index": "pypi",
+            "version": "==4.6.3"
+        },
+        "mkdocs-redirects": {
+            "hashes": [
+                "sha256:a1831fc7ea474668bad2611fb70d5d079390203d1dcd6a02cbd4d0838676ff30"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
         },
         "mknotebooks": {
             "hashes": [
@@ -290,6 +312,14 @@
                 "sha256:ff7a40b4860b727ab48fad6360eb351cc1b33cbf9b15a0f689ca5353e9463324"
             ],
             "version": "==2.6.1"
+        },
+        "pymdown-extensions": {
+            "hashes": [
+                "sha256:66fae2683c7a1dac53184f7de57f51f8dad73f9ead2f453e94e85096cb811335",
+                "sha256:cb879686a586b22292899771f5e5bc3382808e92aa938f71b550ecdea709419f"
+            ],
+            "index": "pypi",
+            "version": "==6.3"
         },
         "pyrsistent": {
             "hashes": [

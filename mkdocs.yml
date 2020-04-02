@@ -20,6 +20,48 @@ plugins:
       preamble: "preamble.py"
       write_markdown: true
   - autolinks 
+  - redirects:
+#      redirect_maps:
+#          'old.md': 'new.md'
+#          'old/file.md': 'new/file.md'
+#          'some_file.md': 'http://external.url.com/foobar'
+#  - blog:
+#          format: "(%m/%d/%y)"
+#          text-align: "right"
+#          folder: blog
+#          articles: 6
+#          more-articles: "More articles (%)"
+#          pagination: "Page % of %"
+#          display-more-articles: true
+#          display-article-date: true
+
+# Configuration
+theme:
+  name: 'material'
+#  logo: 'images/logo.svg'
+  language: 'en'
+  palette:
+    primary: 'blue-grey'
+    accent: 'light-blue'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+
+# Options
+extra:
+#  logo: 'images/download.svg'
+  feature:
+    tabs: false
+  social:
+    - type: globe
+      link: https://www.voronenko.info
+    - type: github-alt
+      link: https://github.com/voronenko
+    - type: twitter
+      link: https://twitter.com/slavko
+    - type: linkedin
+      link: https://www.linkedin.com/in/voronenkovyacheslav/
+
 markdown_extensions:
   - toc:
       permalink: True
@@ -27,3 +69,27 @@ markdown_extensions:
   - fenced_code
   - plantuml_markdown:
   - codehilite
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - fontawesome_markdown
