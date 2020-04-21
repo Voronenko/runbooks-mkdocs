@@ -1,4 +1,4 @@
-site_name: project-mkdocs
+site_name: project docs
 
 plugins:
   - build_plantuml:
@@ -21,20 +21,20 @@ plugins:
       write_markdown: true
   - autolinks 
   - redirects:
+#  - toc-sidebar
 #      redirect_maps:
 #          'old.md': 'new.md'
 #          'old/file.md': 'new/file.md'
 #          'some_file.md': 'http://external.url.com/foobar'
-#  - blog:
-#          format: "(%m/%d/%y)"
-#          text-align: "right"
-#          folder: blog
-#          articles: 6
-#          more-articles: "More articles (%)"
-#          pagination: "Page % of %"
-#          display-more-articles: true
-#          display-article-date: true
-
+  - blog:
+      format: "(%m/%d/%y)"
+      text-align: "right"
+      folder: blog
+      articles: 6
+      more-articles: "More articles (%)"
+      pagination: "Page % of %"
+      display-more-articles: true
+      display-article-date: true
 # Configuration
 theme:
   name: 'material'

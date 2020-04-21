@@ -1,4 +1,5 @@
-_build/p-env
-_build/.venv
+p-env
+.venv
 site
 *.tmp
+.vscode
