@@ -23,7 +23,7 @@ jobs:
 
       # todo: move to action
       - name: Setup plantuml with deps
-        run:  DEBIAN_FRONTEND=noninteractive apt-get -yq install plantuml graphviz
+        run:  DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install plantuml graphviz
 
     # commenting for now: use this if we start running tests via gh-actions!
     # for now, only mkdocs is required - no need to install/cache all requirements
