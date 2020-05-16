@@ -13,7 +13,7 @@ plugins:
       glob:
         - diagrams/**/*.py
       regex:
-        - '.*\.(tmp|bin|tar)$'
+        - '.*\.(tmp|bin|tar|template)$'
   - macros
   - mknotebooks:
       execute: false

@@ -1,3 +1,34 @@
+## Automatic publishing to gh-pages using github-actions
+
+We will be using 3rd party action https://github.com/peaceiris/actions-gh-pages
+
+You need to do once:
+
+```
+ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f gh-pages -N ""
+# You will get 2 files:
+#   gh-pages.pub (public key)
+#   gh-pages     (private key)
+```
+
+Next, Go to Repository Settings
+
+Go to Deploy Keys and add your public key with the Allow write access
+Go to Secrets and add your private key as ACTIONS_DEPLOY_KEY
+
+Now you can add fragment to your github workflow pipeline
+
+
+```yml
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.6.1
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./site
+```
+
 ## Extras
 
 ### Macros plugin
