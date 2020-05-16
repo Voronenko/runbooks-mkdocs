@@ -1,0 +1,41 @@
+name: build and deploy mkdocs to github pages
+
+on:
+  push:
+    branches:
+      - master
+      - github-action
+
+jobs:
+  deploy:
+    runs-on: ubuntu:18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive" 
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.6'
+          architecture: 'x64'
+
+    # commenting for now: use this if we start running tests via gh-actions!
+    # for now, only mkdocs is required - no need to install/cache all requirements
+    #  - name: Cache dependencies
+    #    uses: actions/cache@v1
+    #    with:
+    #      path: ~/.cache/pip
+    #      key: $-pip-$
+    #      restore-keys: |
+    #        $-pip-
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -U pipenv 
+          pipenv sync
+
+      - name: Build site
+        run: mkdocs build
