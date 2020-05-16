@@ -21,12 +21,13 @@ Now you can add fragment to your github workflow pipeline
 
 ```yml
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.6.1
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./site
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+          publish_dir: ./site
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+
 ```
 
 ## Extras
