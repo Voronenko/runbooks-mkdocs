@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu:18.04
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
@@ -38,4 +38,4 @@ jobs:
           pipenv sync
 
       - name: Build site
-        run: mkdocs build
+        run: pipenv run mkdocs build
