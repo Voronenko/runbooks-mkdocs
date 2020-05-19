@@ -26,6 +26,9 @@ plugins:
 #          'old.md': 'new.md'
 #          'old/file.md': 'new/file.md'
 #          'some_file.md': 'http://external.url.com/foobar'
+  - mkdocs-simple-hooks:
+#      hooks:
+#        - hook-name: "your.module:hook_function"
   - blog:
       format: "(%m/%d/%y)"
       text-align: "right"

@@ -380,3 +380,26 @@ Default value: "left"
 
 https://github.com/spotify/mkdocs-monorepo-plugin
 https://github.com/byrnereese/mkdocs-git-committers-plugin
+
+
+### Custom callbacks with mkdocs-simple-hooks
+
+Plugin docs https://github.com/aklajnert/mkdocs-simple-hooks
+
+Let's say you want to copy the `README.md` file to `docs/index.md`. To do that, create a new file, e.g.: `docs/hooks.py`, and put the following function there:
+
+```py
+import shutil
+
+def copy_readme(*args, **kwargs):
+    shutil.copy("README.md", "docs/index.md")
+```
+
+Now, register the hook in your mkdocs.yml:
+
+```yaml
+plugins:
+  - mkdocs-simple-hooks:
+      hooks:
+        - on_pre_build: "docs.hooks:copy_readme"
+```
