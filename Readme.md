@@ -403,3 +403,18 @@ plugins:
       hooks:
         - on_pre_build: "docs.hooks:copy_readme"
 ```
+
+Idea for list of hooks can be obtained on  https://www.mkdocs.org/user-guide/plugins/#events
+and ideas what you could generally intercept on which level can be obtained from https://github.com/mkdocs/mkdocs/wiki/Event-Based-Plugin-API
+
+event       | vars   | Possible usage
+----------- | ------ | --------------
+post-config | config | Alter config or prepossessing based on config values
+pre-nav     | config, nav-item | Alter/intercept a nav item's creation
+post-nav    | config, nav-item, global nav (so far) | Alter a just created nav item
+pre-build   | config, global template vars, global nav | Alter global nav, template vars, etc.
+pre-page    | config, template, context | Alter single page and/or template
+post-page   | config, rendered template | Page specific post-processing
+post-build  | config | project wide postprocessing
+deploy      | config | provide a deploy script (only fired from deploy command)
+pre-serve   | config, server_instance | add addition files/dirs to watcher (only fired from serve command)
