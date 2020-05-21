@@ -38,6 +38,7 @@ plugins:
       pagination: "Page % of %"
       display-more-articles: true
       display-article-date: true
+  - table-reader
 # Configuration
 theme:
   name: 'material'
