@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="619px" preserveAspectRatio="none" style="width:565px;height:619px;" version="1.1" viewBox="0 0 565 619" width="565px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="476" x="48.5" y="16.708">System Context diagram for Internet Banking System</text><!--MD5=[92848cbaf65985a669855153c5362c37]
+entity customer--><rect fill="#08427B" height="120.1094" style="stroke: #073B6F; stroke-width: 1.5;" width="217" x="177.5" y="28.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="257.5" y="50.0918">«person»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="153" x="206.5" y="67.7734">Personal Banking</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="242.5" y="86.3984">Customer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="288" y="103.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="197" x="187.5" y="119.4639">A customer of the bank, with</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="201" y="135.7607">personal bank accounts.</text><!--MD5=[6c7a3b43a568b319c0b7c06f28312f5c]
+entity banking_system--><rect fill="#1168BD" height="152.7031" style="stroke: #3C7FC0; stroke-width: 1.5;" width="218" x="6" y="225.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="86.5" y="247.0918">«system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="150" x="37" y="264.7734">Internet Banking</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="82" y="283.3984">System</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="117" y="300.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="173" x="26.5" y="316.4639">Allows customers to view</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="194" x="16" y="332.7607">information about their bank</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="140" x="43" y="349.0576">accounts, and make</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="79" y="365.3545">payments.</text><!--MD5=[bad929e9c876a7d1c1a3279f5945ebcd]
+entity mail_system--><rect fill="#999999" height="101.4844" style="stroke: #8A8A8A; stroke-width: 1.5;" width="191" x="363.5" y="251.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="115" x="401.5" y="273.0918">«external_system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="122" x="398" y="290.7734">E-mail system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="461" y="307.542"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="149" x="382.5" y="323.8389">The internal Microsoft</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="171" x="373.5" y="340.1357">Exchange e-mail system.</text><!--MD5=[c743dbdb72a31f48d179cb877e8a310f]
+entity mainframe--><rect fill="#999999" height="152.7031" style="stroke: #8A8A8A; stroke-width: 1.5;" width="204" x="13" y="455.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="115" x="57.5" y="477.0918">«external_system»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="169" x="27.5" y="494.7734">Mainframe Banking</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="66" x="82" y="513.3984">System</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="117" y="530.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="142" x="42" y="546.4639">Stores all of the core</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="180" x="23" y="562.7607">banking information about</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="150" x="38" y="579.0576">customers, accounts,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="55.5" y="595.3545">transactions, etc.</text><!--MD5=[9523bf148e587b71906a6d0694ea5006]
+link customer to banking_system--><path d="M237.9119,148.9929 C219.8892,171.495 199.1038,197.4463 179.8132,221.5314 " fill="none" id="customer-&gt;banking_system" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="176.4811,225.6916,185.2294,221.1676,179.6068,221.7891,178.9853,216.1665,176.4811,225.6916" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="212" y="192.02">Uses</text><!--MD5=[1512afb267713112638094d910711c5b]
+reverse link customer to mail_system--><path d="M338.0699,153.2127 C363.6795,184.8176 394.1008,222.3607 418.0245,251.8851 " fill="none" id="customer&lt;-mail_system" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="334.6505,148.9929,337.2087,158.5037,337.7983,152.8777,343.4243,153.4673,334.6505,148.9929" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123" x="373" y="192.02">Sends e-mails to</text><!--MD5=[550ed093881c17a100d661edb2e38b29]
+link banking_system to mail_system--><path d="M224.3164,302.4531 C267.2307,302.4531 316.1761,302.4531 358.2242,302.4531 " fill="none" id="banking_system-&gt;mail_system" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="363.317,302.4531,354.317,298.4531,358.317,302.4531,354.317,306.4531,363.317,302.4531" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="103" x="242.25" y="281.52">Sends e-mails</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="42" x="272.75" y="295.7246">[SMTP]</text><!--MD5=[8a74bde8ad5e073671ecd18cf6e971c6]
+link banking_system to mainframe--><path d="M115,379.0398 C115,402.0013 115,427.2712 115,450.5607 " fill="none" id="banking_system-&gt;mainframe" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="115,455.809,119,446.809,115,450.809,111,446.809,115,455.809" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="116" y="422.02">Uses</text><!--MD5=[ce7873b4aeece007cf379a3b6ceb3839]
+@startuml
+!include<C4/C4>
+!include<C4/C4_Component>
+!include<C4/C4_Container>
+!include<C4/C4_Context>
+
+LAYOUT_TOP_DOWN
+'LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+
+
+title System Context diagram for Internet Banking System
+
+Person(customer, "Personal Banking Customer", "A customer of the bank, with personal bank accounts.")
+System(banking_system, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+System_Ext(mail_system, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+System_Ext(mainframe, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+Rel(customer, banking_system, "Uses")
+Rel_Back(customer, mail_system, "Sends e-mails to")
+Rel_Neighbor(banking_system, mail_system, "Sends e-mails", "SMTP")
+Rel(banking_system, mainframe, "Uses")
+
+@enduml
+
+@startuml
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+top to bottom direction
+
+
+title System Context diagram for Internet Banking System
+
+rectangle "==Personal Banking Customer\n\n A customer of the bank, with personal bank accounts." <<person>> as customer
+rectangle "==Internet Banking System\n\n Allows customers to view information about their bank accounts, and make payments." <<system>> as banking_system
+
+rectangle "==E-mail system\n\n The internal Microsoft Exchange e-mail system." <<external_system>> as mail_system
+rectangle "==Mainframe Banking System\n\n Stores all of the core banking information about customers, accounts, transactions, etc." <<external_system>> as mainframe
+
+customer - -> banking_system : "===Uses"
+customer <- - mail_system : "===Sends e-mails to"
+banking_system -> mail_system : "===Sends e-mails\n//<size:12>[SMTP]</size>//"
+banking_system - -> mainframe : "===Uses"
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 11:35:57 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-8u252-b09-1~18.04-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

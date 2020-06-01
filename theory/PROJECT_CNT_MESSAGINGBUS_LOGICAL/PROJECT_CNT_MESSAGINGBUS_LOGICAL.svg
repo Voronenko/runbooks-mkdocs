@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="904px" preserveAspectRatio="none" style="width:981px;height:904px;" version="1.1" viewBox="0 0 981 904" width="981px" zoomAndPan="magnify"><defs/><g><!--MD5=[84dda40acb3410cad7262261daba2aaf]
+cluster c1--><rect fill="#FFFFFF" height="731" style="stroke: #444444; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;" width="939" x="14" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="441.5" y="176.9951">«boundary»</text><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="196" x="385.5" y="195.1484">Customer Information</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="452.5" y="210.0605">[System]</text><!--MD5=[4541fb81c80c07473fe4b07432ef0971]
+entity app--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="219" x="22.5" y="221"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="95" y="242.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="189" x="37.5" y="259.8203">Customer Application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="126" x="69" y="274.7324">[Javascript, Angular]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="134" y="290.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="199" x="32.5" y="306.8545">Allows customers to manage</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="93.5" y="323.1514">their profile</text><!--MD5=[3938681022872452b9357901721a7bd2]
+entity customer_service--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="182" x="419" y="221"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="473" y="242.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="158" x="431" y="259.8203">Customer Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="117" x="451.5" y="274.7324">[Java, Spring Boot]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="512" y="290.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="429" y="306.8545">The point of access for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="436.5" y="323.1514">customer information</text><!--MD5=[dba6d6074aa896215894e7a834d404ca]
+entity message_bus--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="180" x="765" y="221"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="818" y="242.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="118" x="796" y="259.8203">Message Bus</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="68" x="821" y="274.7324">[RabbitMQ]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="857" y="290.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="156" x="775" y="306.8545">Transport for business</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="47" x="831.5" y="323.1514">events</text><!--MD5=[03d530edb6a1e95e334cdff020d059b7]
+entity reporting_service--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="214" x="470" y="490"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="540" y="511.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="158" x="498" y="528.8203">Reporting Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="41" x="556.5" y="543.7324">[Ruby]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="579" y="559.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="480" y="575.8545">Creates normalised data for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="133" x="510.5" y="592.1514">reporting purposes</text><!--MD5=[d281438539ff50848aa8b12911b4942e]
+entity audit_service--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="209" x="719.5" y="490"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="787" y="511.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117" x="765.5" y="528.8203">Audit Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="60" x="794" y="543.7324">[C#/.NET]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="826" y="559.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="729.5" y="575.8545">Provides organisation-wide</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="113" x="767.5" y="592.1514">auditing facilities</text><!--MD5=[5a3f2a73ed6d331241bacd7eb084a338]
+entity customer_db--><path d="M219,503.5 C219,493.5 327,493.5 327,493.5 C327,493.5 435,493.5 435,503.5 L435,591.6563 C435,601.6563 327,601.6563 327,601.6563 C327,601.6563 219,601.6563 219,591.6563 L219,503.5 " fill="#438DD5" style="stroke: #3C7FC0; stroke-width: 1.5;"/><path d="M219,503.5 C219,513.5 327,513.5 327,513.5 C327,513.5 435,513.5 435,503.5 " fill="none" style="stroke: #3C7FC0; stroke-width: 1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="290" y="528.6387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="176" x="239" y="546.3203">Customer Database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="76" x="289" y="561.2324">[Oracle 12c]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="329" y="577.0576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="196" x="229" y="593.3545">Stores customer information</text><!--MD5=[819454c33a690d73f74d342a973445f2]
+entity reporting_db--><path d="M468.5,754 C468.5,744 576,744 576,744 C576,744 683.5,744 683.5,754 L683.5,874.75 C683.5,884.75 576,884.75 576,884.75 C576,884.75 468.5,884.75 468.5,874.75 L468.5,754 " fill="#438DD5" style="stroke: #3C7FC0; stroke-width: 1.5;"/><path d="M468.5,754 C468.5,764 576,764 576,764 C576,764 683.5,764 683.5,754 " fill="none" style="stroke: #3C7FC0; stroke-width: 1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="539" y="779.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="176" x="488" y="796.8203">Reporting Database</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="50" x="551" y="811.7324">[MySQL]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="578" y="827.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="191" x="478.5" y="843.8545">Stores a normalized version</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="486.5" y="860.1514">of all business data for ad</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="163" x="494.5" y="876.4482">hoc reporting purposes</text><!--MD5=[203c482608765d38859cc3eb9e6e5e02]
+entity audit_store--><rect fill="#438DD5" height="115.4531" style="stroke: #3C7FC0; stroke-width: 1.5;" width="210" x="719" y="757"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="74" x="787" y="778.1387">«container»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="101" x="773.5" y="795.8203">Audit Store</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="83" x="782.5" y="810.7324">[Event Store]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="826" y="826.5576"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="170" x="737" y="842.8545">Stores information about</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="190" x="729" y="859.1514">events that have happened</text><!--MD5=[92848cbaf65985a669855153c5362c37]
+entity customer--><rect fill="#08427B" height="85.1875" style="stroke: #073B6F; stroke-width: 1.5;" width="107" x="78.5" y="8"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="103.5" y="29.1387">«person»</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="88.5" y="46.8203">Customer</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="0" x="134" y="63.5889"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="92.5" y="79.8857">A customer</text><!--MD5=[9d070c17d60af0fda271a0e3ab29c6d1]
+link customer to app--><path d="M132,93.1176 C132,127.5326 132,176.4707 132,215.4242 " fill="none" id="customer-&gt;app" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="132,220.6084,136,211.6084,132,215.6084,128,211.6084,132,220.6084" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="35" x="139.5" y="136.0669">Uses</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="48" x="133" y="150.2715">[HTTPS]</text><!--MD5=[51e407f081fd82403ac79d439d8428c9]
+link app to customer_service--><path d="M241.5871,278.5 C296.0763,278.5 361.3293,278.5 413.8525,278.5 " fill="none" id="app-&gt;customer_service" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="418.8949,278.5,409.8949,274.5,413.8949,278.5,409.8949,282.5,418.8949,278.5" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="136" x="259.75" y="242.5669">Updates customer</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="130" x="265.25" y="257.6997">information using</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="125" x="267.75" y="271.9043">[async, JSON/HTTPS]</text><!--MD5=[0a0e8b647d7ce261624080a2974e27fc]
+reverse link app to customer_service--><path d="M247.0133,309.0605 C254.6714,310.4223 262.2996,311.5941 269.75,312.5 C323.1346,318.9909 337.49,319.9443 390.75,312.5 C399.918,311.2186 409.3706,309.4084 418.7535,307.2832 " fill="none" id="app&lt;-customer_service" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="241.7085,308.0884,249.8399,313.6454,246.6266,308.9898,251.2822,305.7765,241.7085,308.0884" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="270.75" y="294.5669">Sends events to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="81" x="289.75" y="308.7715">[WebSocket]</text><!--MD5=[ddbaa974f01bfc07826324a9083d5ff8]
+link customer_service to message_bus--><path d="M601.096,278.5 C650.0233,278.5 710.2874,278.5 759.8241,278.5 " fill="none" id="customer_service-&gt;message_bus" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="764.889,278.5,755.889,274.5,759.889,278.5,755.889,282.5,764.889,278.5" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="621" y="256.5669">Sends customer</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="619.5" y="271.6997">update events to</text><!--MD5=[3a9ae2bc45f014f73ae4ec094b568494]
+link customer_service to customer_db--><path d="M470.7419,336.2072 C440.1181,381.2226 397.753,443.497 366.9533,488.7709 " fill="none" id="customer_service-&gt;customer_db" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="364.0095,493.098,372.379,487.9066,366.8219,488.9639,365.7645,483.4068,364.0095,493.098" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="104" x="430" y="410.5669">Stores data in</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="39" x="462.5" y="424.7715">[JDBC]</text><!--MD5=[aab3e1d17952107c7943e6111a55934d]
+link message_bus to reporting_service--><path d="M772.4334,336.0056 C748.1344,354.3897 722.147,375.5605 700,397 C672.0385,424.0683 644.3075,457.2921 622.274,485.6317 " fill="none" id="message_bus-&gt;reporting_service" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="619.0651,489.7763,627.7377,485.1087,622.1261,485.8228,621.412,480.2112,619.0651,489.7763" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="702.5" y="410.0669">Sends customer</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="701" y="425.1997">update events to</text><!--MD5=[47d0ff9262dcd057455e43360ea526e6]
+link message_bus to audit_service--><path d="M848.3497,336.2072 C843.3134,379.9098 836.4024,439.8794 831.2294,484.7673 " fill="none" id="message_bus-&gt;audit_service" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="830.6393,489.8882,835.6434,481.4053,831.2117,484.9211,827.696,480.4894,830.6393,489.8882" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="843.5" y="410.0669">Sends customer</text><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="127" x="842" y="425.1997">update events to</text><!--MD5=[98a257615ec003bc19f8f9f5c1b27e75]
+link reporting_service to reporting_db--><path d="M576.7842,605.1063 C576.638,644.1444 576.4433,696.1477 576.2844,738.5626 " fill="none" id="reporting_service-&gt;reporting_db" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="576.2652,743.6861,580.2989,734.7011,576.2839,738.6861,572.2989,734.6712,576.2652,743.6861" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="104" x="577" y="679.0669">Stores data in</text><!--MD5=[908e6d2f846515fd3481ab93e375cb8c]
+link audit_service to audit_store--><path d="M824,605.1063 C824,648.357 824,707.5217 824,751.93 " fill="none" id="audit_service-&gt;audit_store" style="stroke: #666666; stroke-width: 1.0;"/><polygon fill="#666666" points="824,756.9969,828,747.9969,824,751.9969,820,747.9969,824,756.9969" style="stroke: #666666; stroke-width: 1.0;"/><text fill="#666666" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="119" x="825" y="679.0669">Stores events in</text><!--MD5=[7ed498674e62ca5e4e9828f654841866]
+link reporting_service to audit_service--><!--MD5=[7f7ee528cdd5f2bf3c282187fed69cd7]
+@startuml
+!include<C4/C4>
+!include<C4/C4_Component>
+!include<C4/C4_Container>
+!include<C4/C4_Context>
+
+LAYOUT_TOP_DOWN
+'LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+
+Person(customer, Customer, "A customer")
+
+System_Boundary(c1, "Customer Information") {
+
+    Container(app, "Customer Application", "Javascript, Angular", "Allows customers to manage their profile")
+
+    Container(customer_service, "Customer Service", "Java, Spring Boot", "The point of access for customer information")
+
+    Container(message_bus, "Message Bus", "RabbitMQ", "Transport for business events")
+
+    Container(reporting_service, "Reporting Service", "Ruby", "Creates normalised data for reporting purposes")
+
+    Container(audit_service, "Audit Service", "C#/.NET", "Provides organisation-wide auditing facilities")
+
+    ContainerDb(customer_db, "Customer Database", "Oracle 12c", "Stores customer information")
+
+    ContainerDb(reporting_db, "Reporting Database", "MySQL", "Stores a normalized version of all business data for ad hoc reporting purposes")
+
+    Container(audit_store, "Audit Store", "Event Store", "Stores information about events that have happened")
+}
+
+Rel(customer, app, "Uses", "HTTPS")
+
+Rel_R(app, customer_service, "Updates customer information using", "async, JSON/HTTPS")
+
+Rel_L(customer_service, app, "Sends events to", "WebSocket")
+Rel_R(customer_service, message_bus, "Sends customer update events to")
+Rel(customer_service, customer_db, "Stores data in", "JDBC")
+
+Rel(message_bus, reporting_service, "Sends customer update events to")
+Rel(message_bus, audit_service, "Sends customer update events to")
+
+Rel(reporting_service, reporting_db, "Stores data in")
+Rel(audit_service, audit_store, "Stores events in")
+
+Lay_R(reporting_service, audit_service)
+
+@enduml
+
+@startuml
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+skinparam database<<component>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+top to bottom direction
+
+rectangle "==Customer\n\n A customer" <<person>> as customer
+
+rectangle "==Customer Information\n<size:12>[System]</size>" <<boundary>> as c1 {
+
+    rectangle "==Customer Application\n//<size:12>[Javascript, Angular]</size>//\n\n Allows customers to manage their profile" <<container>> as app
+
+    rectangle "==Customer Service\n//<size:12>[Java, Spring Boot]</size>//\n\n The point of access for customer information" <<container>> as customer_service
+
+    rectangle "==Message Bus\n//<size:12>[RabbitMQ]</size>//\n\n Transport for business events" <<container>> as message_bus
+
+    rectangle "==Reporting Service\n//<size:12>[Ruby]</size>//\n\n Creates normalised data for reporting purposes" <<container>> as reporting_service
+
+    rectangle "==Audit Service\n//<size:12>[C#/.NET]</size>//\n\n Provides organisation-wide auditing facilities" <<container>> as audit_service
+
+    database "==Customer Database\n//<size:12>[Oracle 12c]</size>//\n\n Stores customer information" <<container>> as customer_db
+
+    database "==Reporting Database\n//<size:12>[MySQL]</size>//\n\n Stores a normalized version of all business data for ad hoc reporting purposes" <<container>> as reporting_db
+
+    rectangle "==Audit Store\n//<size:12>[Event Store]</size>//\n\n Stores information about events that have happened" <<container>> as audit_store
+}
+
+customer - -> app : "===Uses\n//<size:12>[HTTPS]</size>//"
+
+app -RIGHT-> customer_service : "===Updates customer information using\n//<size:12>[async, JSON/HTTPS]</size>//"
+
+customer_service -LEFT-> app : "===Sends events to\n//<size:12>[WebSocket]</size>//"
+customer_service -RIGHT-> message_bus : "===Sends customer update events to"
+customer_service - -> customer_db : "===Stores data in\n//<size:12>[JDBC]</size>//"
+
+message_bus - -> reporting_service : "===Sends customer update events to"
+message_bus - -> audit_service : "===Sends customer update events to"
+
+reporting_service - -> reporting_db : "===Stores data in"
+audit_service - -> audit_store : "===Stores events in"
+
+reporting_service -[hidden]R- audit_service
+
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 11:35:57 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-8u252-b09-1~18.04-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
