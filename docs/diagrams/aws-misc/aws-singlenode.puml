@@ -1,0 +1,85 @@
+@startuml Production Deployment
+
+
+!include <aws/common>
+
+
+!include <aws/Compute/AmazonEC2/AmazonEC2>
+!include <aws/Compute/AmazonEC2/instance/instance>
+!include <aws/Compute/AmazonEC2/instances/instances>
+!include <aws/Compute/AmazonVPC/AmazonVPC>
+!include <aws/General/AWScloud/AWScloud>
+!include <aws/General/client/client>
+!include <aws/General/users/users>
+!include <aws/General/user/user>
+
+!include <tupadr3/common>
+!include <tupadr3/devicons/nginx>
+!include <tupadr3/devicons/php>
+
+!include <aws/Storage/AmazonS3/AmazonS3>
+!include <aws/Storage/AmazonS3/bucket/bucket>
+!include <aws/Storage/AmazonS3/bucketwithobjects/bucketwithobjects>
+!include <aws/Storage/AmazonS3/object/object>
+
+/' Inclusions for more detailed diagrams '/
+!include <aws/Compute/AmazonEC2/DBoninstance/DBoninstance>
+!include <aws/Compute/AmazonEC2/ElasticIPaddress/ElasticIPaddress>
+
+!include <aws/Compute/ElasticLoadBalancing/ApplicationLoadBalancer/ApplicationLoadBalancer>
+!include <aws/Compute/ElasticLoadBalancing/ClassicLoadbalancer/ClassicLoadbalancer>
+!include <aws/Compute/ElasticLoadBalancing/ElasticLoadBalancing>
+!include <aws/Database/AmazonRDS/AmazonRDS>
+!include <aws/Database/AmazonRDS/MySQLDBinstance/MySQLDBinstance>
+!include <aws/Database/AmazonRDS/MySQLinstancealternate/MySQLinstancealternate>
+!include <aws/SDKs/PHP/PHP>
+!include <aws/SecurityIdentityCompliance/ACM/certificatemanager/certificatemanager>
+
+' Diagram related constants
+!$p_header="Bird eye organization"
+!$p_aws_id="aws"
+!$p_project="proj"
+!$p_fqdn="https://proj.com"
+!$p_env="prod"
+!$p_default_vpc="default-vpc"
+
+' END
+
+header "$p_header"
+
+USERS(visitors, "visitors")
+
+AWSCLOUD(aws, "$p_aws_id") {
+
+    AMAZONS3(appcontent, "$p_project-content")
+
+    AMAZONVPC(appvpc, "$p_default_vpc") {
+
+
+AMAZONEC2(webserver, "$p_project-$p_env-app-0") {
+    DEV_NGINX(nginx1, "")
+    DEV_PHP(php1, "")
+    DBONINSTANCE(db1, "mysql")
+}
+
+}
+
+visitors ---> nginx1
+nginx1 -> php1
+php1 -> db1
+
+
+
+
+
+legend right
+  Region: $p_region
+  Git: $p_git_repo
+  Runbooks: $p_runbook.
+endlegend
+
+left footer $p_footer
+
+
+
+@enduml
