@@ -30,6 +30,41 @@ Now you can add fragment to your github workflow pipeline
 
 ```
 
+## Automatic publishing to gitlab
+
+Please find idea for automatic gitlab pages publishing on a pipeline below
+
+```yaml
+image: python:3.8-buster
+# CD/CI example for gitlab
+# TODO: Introduce image with pre-built tools for easy run
+before_script:
+  - pip install -r requirements.txt
+  - DEBIAN_FRONTEND=noninteractive apt update
+  - DEBIAN_FRONTEND=noninteractive apt-get -yq install plantuml graphviz
+
+test:
+  stage: test
+  script:
+  - mkdocs build --verbose --site-dir test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - mkdocs build
+  artifacts:
+    paths:
+    - public
+    expire_in: 1 week
+  only:
+  - master
+```
+
 # Extras
 
 # mkdocs-table-reader-plugin

@@ -1,4 +1,5 @@
 site_name: project docs
+site_dir: public
 
 plugins:
   - build_plantuml:
