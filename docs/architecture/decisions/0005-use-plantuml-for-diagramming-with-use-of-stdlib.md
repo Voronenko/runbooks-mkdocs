@@ -1,4 +1,4 @@
-# 3. Use PlantUML for diagramming
+# 5. Use PlantUML for diagramming with use of stdlib
 
 Date: 2020-11-03
 
@@ -6,7 +6,7 @@ Date: 2020-11-03
 
 Accepted
 
-Amended by [5. Use PlantUML for diagramming with use of stdlib](0005-use-plantuml-for-diagramming-with-use-of-stdlib.md)
+Amends [3. Use PlantUML for diagramming](0003-use-plantuml-for-diagramming.md)
 
 ## Context
 

@@ -726,3 +726,54 @@ This returns the following Markdown code:
 * [3. Use PlantUML for diagramming](0003-use-plantuml-for-diagramming.md)
 * [4. Use mkdocs as a knowledge base system](0004-use-mkdocs-as-a-knowledge-base-system.md)
 ```
+
+
+Linking Architecture Decision Records
+When ADRs are linked somehow we want to document this and adr link eases this for us.
+
+Let’s use an example where ADR #5 amends ADR #3 so that we could link both with the following command:
+
+```sh
+./bin/adr link 5 Amends 3 "Amended by"
+```
+
+Now graph will look like 
+
+
+```sh
+
+./bin/adr generate graph
+digraph {
+  node [shape=plaintext];
+  subgraph {
+    _1 [label="1. Record architecture decisions"; URL="0001-record-architecture-decisions.html"];
+    _2 [label="2. Use sphinx as our knowledge base system"; URL="0002-use-sphinx-as-our-knowledge-base-system.html"];
+    _1 -> _2 [style="dotted", weight=1];
+    _3 [label="3. Use PlantUML for diagramming"; URL="0003-use-plantuml-for-diagramming.html"];
+    _2 -> _3 [style="dotted", weight=1];
+    _4 [label="4. Use mkdocs as a knowledge base system"; URL="0004-use-mkdocs-as-a-knowledge-base-system.html"];
+    _3 -> _4 [style="dotted", weight=1];
+    _5 [label="5. Use PlantUML for diagramming with use of stdlib"; URL="0005-use-plantuml-for-diagramming-with-use-of-stdlib.html"];
+    _4 -> _5 [style="dotted", weight=1];
+  }
+  _4 -> _2 [label="Supercedes", weight=0]
+  _5 -> _3 [label="Amends", weight=0]
+}
+
+```
+
+Or as an image:
+
+![alt text](./docs/architecture/graph2.png "Graph2")
+
+
+Note, that in addition both ADR files were updated.
+
+
+More to read:
+
+- http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
+- https://github.com/npryce/adr-tools
+- https://www.fabian-keller.de/blog/documenting-architecture-decisions
+- https://adr.github.io/
+- https://github.com/joelparkerhenderson/architecture_decision_record/blob/01cc3c801b1cc61f82391a0a08986e4145e21c56/README.md
