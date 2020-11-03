@@ -1,0 +1,5 @@
+- git: https://github.com/npryce/adr-tools.git
+  version: master
+  files:
+    - src: "src"
+      dst: bin/

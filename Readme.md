@@ -65,6 +65,10 @@ pages:
   - master
 ```
 
+## Automatic publishing to confluence
+
+So far, best working automated tool is  https://github.com/kovetskiy/mark, although it is not ideal
+
 # Extras
 
 # mkdocs-table-reader-plugin
