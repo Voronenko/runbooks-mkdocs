@@ -510,3 +510,219 @@ post-page   | config, rendered template | Page specific post-processing
 post-build  | config | project wide postprocessing
 deploy      | config | provide a deploy script (only fired from deploy command)
 pre-serve   | config, server_instance | add addition files/dirs to watcher (only fired from serve command)
+
+
+### Working with adr tools
+
+The first step is to initialize ADRs for our project 
+
+```sh
+adr init doc/architecture/decisions
+docs/architecture/decisions/0001-record-architecture-decisions.md
+```
+
+Afterwards, our project directory structure looks similar to this one:
+
+```
+
+hasCode.com
+micha kops' playground
+« Analyzing Java Problems – Tools, Snippets and WorkflowsUsing jetstreamDB as in-memory Database for Java »
+Managing Architecture Decision Records with ADR-Tools
+May 27th, 2018 by Micha Kops
+Every software project includes a set of architecture decisions defining boundaries and constraints for further design and implementation.
+
+It’s important to document those decisions somehow or else a development team might not know which decisions where made and with which assumptions.
+
+Or they know the decision but are missing the context and the consequences and therefore decisions are blindly accepted or blindly changed.
+
+In the following short tutorial I will show how to structure architecture decisions in so called Architecture Decision Records and how to manage them with a simple tool named ADR-Tools.
+
+
+Architecture Decision Records
+Architecture Decision Records
+
+Contents
+Architecture Decision Records (ADR)
+Installing ADR-Tools
+Initializing a Project
+Creating new Architecture Decision Records
+Listing Architecture Decision Records
+Superseding a Decision
+Generating Graphs
+Generating Table of Contents
+Linking Architecture Decision Records
+Alternatives
+Y-Statements - Sustainable Architectural Decision Records
+Markdown Architectural Decision Records (MADR)
+e-adr
+Tutorial Sources
+Resources
+ 
+Architecture Decision Records (ADR)
+The Agile Manifesto states that “Working software over comprehensive documentation” but this does not mean that there should be no documentation at all.
+
+Especially for agile software projects where the architecture might adapt to new knowledge, market situations or technologies it is important to know what decisions were made, why they were made and with which assumptions.
+
+The main problem with documentation is, that it needs to be close to the project and it needs to be short and concise or else it won’t be read or won’t be updated.
+
+What are significant decisions that we should document in this scope?
+
+According to my favorite author, Michael T. Nygard (Release it), significant decisions are those who “affect the structure, non-functional characteristics, dependencies, interfaces, or construction techniques”
+
+Therefore each record describes a set of forces and a single decision in their response, forces may appear in multiple Architecture Decision Records (ADR) and we store them in our project directory in doc/arch/adr-NNN.md and we number them sequentially and monotonically.
+
+When reversing a decision, we keep the old ADR file but we’re marking it as superseded because it still might be relevant to know that there was such a decision.
+
+The ADR file contains these typical elements:
+
+Title: The ADR file have names consisting of short noun phrases, Example: ADR 1: Use Hystrix to stabilize integration points.
+Date: The ADR’s creation date
+Status: The decision’s status, e.g.: “accepted“, “proposed” (if stakeholders have not approved yet), “deprecated” or “superseded“
+Context: A description of the forces at play (organizational, political, cultural, technological, social, project-local…)
+Decision: The response to these forces, active voice, full sentences.
+Consequences: The resulting context after applying the decision with all consequences, positive as well as neutral or negative ones.
+For more detailed information, please feel free to read Michael T. Nygard: Documenting Architecture Decisions.
+
+Of course other formats for ADRs exist, please feel free to visit https://adr.github.io/ for other tools and formats.
+
+Installing ADR-Tools
+We will be using ADR-Tools to manage our ADRs so we need to install it.
+
+Using Mac, we may simply use the following command (using homebrew):
+
+brew install adr-tools
+Another choice e.g. for Linux is to download the latest release from GitHub here, untar the archive and add the src-path to your PATH.
+
+ADR-Tools are a collection of bash scripts.
+
+Initializing a Project
+The first step is to initialize ADRs for our project (in this example it’s a typical Maven project).
+
+We use adr init to initialize ADRs for our project within the specified directory …..
+
+$ ./bin/adr init ./docs/architecture/decisions
+docs/architecture/decisions/0001-record-architecture-decisions.md
+Afterwards, our project directory structure looks similar to this one:
+
+```
+├── docs
+│   └── architecture
+│       └── decisions
+│           └── 0001-record-architecture-decisions.md
+```
+
+As we can see, a first decision already has been added to the project: It’s the decision to record our architecture decisions.
+
+When opening the ADR file we’re able to read the following Markdown file:
+
+
+```
+# 1. Record architecture decisions
+
+Date: 2020-11-03
+
+## Status
+
+Accepted
+
+## Context
+
+We need to record the architectural decisions made on this project.
+
+## Decision
+
+We will use Architecture Decision Records, as [described by Michael Nygard](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions).
+
+## Consequences
+
+See Michael Nygard's article, linked above. For a lightweight ADR toolset, see Nat Pryce's [adr-tools](https://github.com/npryce/adr-tools).
+```
+
+Creating new Architecture Decision Records
+We’re ready now to create our first ADR. The command adr new allows us to create a new ADR with the given title.
+
+```sh
+ ./bin/adr new Use sphinx as our knowledge base system
+```
+
+We’re adding another ADR:
+
+```sh
+./bin/adr new Use PlantUML for diagramming
+./docs/architecture/decisions/0003-use-plantuml-for-diagramming.md
+```
+
+Listing Architecture Decision Records
+We may list existing ADRs using adr list like this:
+
+```sh
+./bin/adr list
+./docs/architecture/decisions/0001-record-architecture-decisions.md
+./docs/architecture/decisions/0002-use-sphinx-as-our-knowledge-base-system.md
+./docs/architecture/decisions/0003-use-plantuml-for-diagramming.md
+```
+
+Superseding a Decision
+Now we will supersede a decision, for example if a new ADR supersedes our decision #2, we would type in the following command:
+
+```sh
+./bin/adr new -s 2 Use mkdocs as a knowledge base system
+./docs/architecture/decisions/0004-use-mkdocs-as-a-knowledge-base-system.md
+```
+This produces new ADR file with a reference to the superseded ADR.
+
+Of course our old decision is changed, too including a reference to the new ADR and setting its status to “Superseded”
+
+Generating Graphs
+To gain an overview of our ADR’s relations we may generate a graph in the DOT format using adr generate graph like this:
+
+```sh
+./bin/adr generate graph
+digraph {
+  node [shape=plaintext];
+  subgraph {
+    _1 [label="1. Record architecture decisions"; URL="0001-record-architecture-decisions.html"];
+    _2 [label="2. Use sphinx as our knowledge base system"; URL="0002-use-sphinx-as-our-knowledge-base-system.html"];
+    _1 -> _2 [style="dotted", weight=1];
+    _3 [label="3. Use PlantUML for diagramming"; URL="0003-use-plantuml-for-diagramming.html"];
+    _2 -> _3 [style="dotted", weight=1];
+    _4 [label="4. Use mkdocs as a knowledge base system"; URL="0004-use-mkdocs-as-a-knowledge-base-system.html"];
+    _3 -> _4 [style="dotted", weight=1];
+  }
+  _4 -> _2 [label="Supercedes", weight=0]
+```
+
+We may write this output to a file e.g. 
+
+```sh
+./bin/adr generate graph > ./docs/architecture/graph.dot
+```
+
+From this DOT file we may create an image e.g. using GraphViz like this:
+
+```sh
+dot -Tpng ./docs/architecture/graph.dot -o./docs/architecture/graph.png
+```
+
+This is what the generated graph looks like as png-image:
+
+![alt text](./docs/architecture/graph.png "Graph")
+
+
+Generating Table of Contents
+To include the ADRs in other documents we may generate a table of contents for our ADRs using adr generate toc like this:
+
+```sh
+./bin/adr generate toc
+```
+This returns the following Markdown code:
+
+```
+# Architecture Decision Records
+
+* [1. Record architecture decisions](0001-record-architecture-decisions.md)
+* [2. Use sphinx as our knowledge base system](0002-use-sphinx-as-our-knowledge-base-system.md)
+* [3. Use PlantUML for diagramming](0003-use-plantuml-for-diagramming.md)
+* [4. Use mkdocs as a knowledge base system](0004-use-mkdocs-as-a-knowledge-base-system.md)
+```
