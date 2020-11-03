@@ -18,3 +18,10 @@ install-confluence-mark:
 
 init-adr:
 	./bin/adr init ./docs/architecture/decisions
+
+view-adr:
+	adr-viewer --adr-path ./docs/architecture/decisions/ --serve --output decisions.html
+
+generate-adr:
+	adr-viewer --adr-path ./docs/architecture/decisions/ --output decisions.html
+

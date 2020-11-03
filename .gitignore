@@ -1,5 +1,6 @@
 p-env
 .venv
-site
+public
 *.tmp
 .vscode
+decisions.html
