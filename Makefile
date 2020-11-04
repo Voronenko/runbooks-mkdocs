@@ -23,5 +23,8 @@ view-adr:
 	adr-viewer --adr-path ./docs/architecture/decisions/ --serve --output decisions.html
 
 generate-adr:
-	adr-viewer --adr-path ./docs/architecture/decisions/ --output decisions.html
+	adr-viewer --adr-path ./docs/architecture/decisions/ --output docs/architecture/decisions/decisions.html
+	sed -i 's/\.md"/\/index.html"/g' docs/architecture/decisions/decisions.html
 
+update-adr-toc:
+	./bin/adr generate toc > docs/architecture/index.md

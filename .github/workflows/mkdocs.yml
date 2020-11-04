@@ -23,7 +23,7 @@ jobs:
 
       # todo: move to action
       - name: Setup plantuml with deps
-        run:  DEBIAN_FRONTEND=noninteractive sudo apt-get update && sudo apt-get -yq install plantuml graphviz
+        run:  DEBIAN_FRONTEND=noninteractive sudo apt-get update && sudo apt-get -yq install plantuml graphviz make
 
     # commenting for now: use this if we start running tests via gh-actions!
     # for now, only mkdocs is required - no need to install/cache all requirements
@@ -40,6 +40,12 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install -U pipenv
           pipenv sync
+
+      - name: Generate adr toc
+        run: pipenv run ./bin/adr generate toc > docs/architecture/index.md
+
+      - name: Patch adr toc
+        run: sed -i 's/\.md"/\/index.html"/g' docs/architecture/decisions/decisions.html
 
       - name: Build site
         run: pipenv run mkdocs build
