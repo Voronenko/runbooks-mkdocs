@@ -42,7 +42,10 @@ jobs:
           pipenv sync
 
       - name: Generate adr toc
-        run: pipenv run ./bin/adr generate toc > docs/architecture/index.md
+        run: ./bin/adr generate toc > docs/architecture/index.md
+
+      - name: Generate interactive view
+        run: pipenv run adr-viewer --adr-path ./docs/architecture/decisions/ --output docs/architecture/decisions/decisions.html 
 
       - name: Patch adr toc
         run: sed -i 's/\.md"/\/index.html"/g' docs/architecture/decisions/decisions.html
