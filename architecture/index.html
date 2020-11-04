@@ -31,18 +31,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-4.6.3">
     
     
       
-        <title>4. Use mkdocs as a knowledge base system - project docs</title>
+        <title>Architecture Decision Records - project docs</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -51,7 +51,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
     
     
       
@@ -60,14 +60,14 @@
         <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
-      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+      <link rel="stylesheet" href="../css/ansi-colours.css">
     
-      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
     
-      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
     
     
       
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#4-use-mkdocs-as-a-knowledge-base-system" tabindex="0" class="md-skip">
+      <a href="#architecture-decision-records" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -98,7 +98,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../../.." title="project docs" aria-label="project docs" class="md-header-nav__button md-logo">
+        <a href=".." title="project docs" aria-label="project docs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                4. Use mkdocs as a knowledge base system
+                Architecture Decision Records
               
             </span>
           
@@ -143,7 +143,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../../.." title="project docs" class="md-nav__button md-logo">
+    <a href=".." title="project docs" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -159,7 +159,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Welcome to MkDocs" class="md-nav__link">
+    <a href=".." title="Welcome to MkDocs" class="md-nav__link">
       Welcome to MkDocs
     </a>
   </li>
@@ -190,11 +190,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../" title="Architecture Decision Records" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Architecture Decision Records" class="md-nav__link md-nav__link--active">
       Architecture Decision Records
     </a>
+    
   </li>
 
         
@@ -202,12 +211,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
     
     <label class="md-nav__link" for="nav-2-2">
       Decisions
@@ -225,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../0001-record-architecture-decisions/" title="1. Record architecture decisions" class="md-nav__link">
+    <a href="decisions/0001-record-architecture-decisions/" title="1. Record architecture decisions" class="md-nav__link">
       1. Record architecture decisions
     </a>
   </li>
@@ -237,7 +244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../0002-use-sphinx-as-our-knowledge-base-system/" title="2. Use sphinx as our knowledge base system" class="md-nav__link">
+    <a href="decisions/0002-use-sphinx-as-our-knowledge-base-system/" title="2. Use sphinx as our knowledge base system" class="md-nav__link">
       2. Use sphinx as our knowledge base system
     </a>
   </li>
@@ -249,7 +256,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../0003-use-plantuml-for-diagramming/" title="3. Use PlantUML for diagramming" class="md-nav__link">
+    <a href="decisions/0003-use-plantuml-for-diagramming/" title="3. Use PlantUML for diagramming" class="md-nav__link">
       3. Use PlantUML for diagramming
     </a>
   </li>
@@ -259,70 +266,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        4. Use mkdocs as a knowledge base system
-      </label>
-    
-    <a href="./" title="4. Use mkdocs as a knowledge base system" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="decisions/0004-use-mkdocs-as-a-knowledge-base-system/" title="4. Use mkdocs as a knowledge base system" class="md-nav__link">
       4. Use mkdocs as a knowledge base system
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#status" class="md-nav__link">
-    Status
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consequences" class="md-nav__link">
-    Consequences
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -332,7 +280,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../0005-use-plantuml-for-diagramming-with-use-of-stdlib/" title="5. Use PlantUML for diagramming with use of stdlib" class="md-nav__link">
+    <a href="decisions/0005-use-plantuml-for-diagramming-with-use-of-stdlib/" title="5. Use PlantUML for diagramming with use of stdlib" class="md-nav__link">
       5. Use PlantUML for diagramming with use of stdlib
     </a>
   </li>
@@ -392,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized/" title="Colorized" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized/" title="Colorized" class="md-nav__link">
       Colorized
     </a>
   </li>
@@ -404,7 +352,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized2/" title="Colorized2" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized2/" title="Colorized2" class="md-nav__link">
       Colorized2
     </a>
   </li>
@@ -416,7 +364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized3/" title="Colorized3" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized3/" title="Colorized3" class="md-nav__link">
       Colorized3
     </a>
   </li>
@@ -428,7 +376,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized4/" title="Colorized4" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized4/" title="Colorized4" class="md-nav__link">
       Colorized4
     </a>
   </li>
@@ -440,7 +388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized5/" title="Colorized5" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized5/" title="Colorized5" class="md-nav__link">
       Colorized5
     </a>
   </li>
@@ -452,7 +400,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized6/" title="Colorized6" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized6/" title="Colorized6" class="md-nav__link">
       Colorized6
     </a>
   </li>
@@ -464,7 +412,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized7/" title="Colorized7" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized7/" title="Colorized7" class="md-nav__link">
       Colorized7
     </a>
   </li>
@@ -476,7 +424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized8/" title="Colorized8" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized8/" title="Colorized8" class="md-nav__link">
       Colorized8
     </a>
   </li>
@@ -488,7 +436,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/colorized9/" title="Colorized9" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/colorized9/" title="Colorized9" class="md-nav__link">
       Colorized9
     </a>
   </li>
@@ -500,7 +448,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/risksystem/" title="Risksystem" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/risksystem/" title="Risksystem" class="md-nav__link">
       Risksystem
     </a>
   </li>
@@ -512,7 +460,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/risksystem2/" title="Risksystem2" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/risksystem2/" title="Risksystem2" class="md-nav__link">
       Risksystem2
     </a>
   </li>
@@ -524,7 +472,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/risksystem3/" title="Risksystem3" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/risksystem3/" title="Risksystem3" class="md-nav__link">
       Risksystem3
     </a>
   </li>
@@ -536,7 +484,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem/" title="Somesystem" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem/" title="Somesystem" class="md-nav__link">
       Somesystem
     </a>
   </li>
@@ -548,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem10/" title="Somesystem10" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem10/" title="Somesystem10" class="md-nav__link">
       Somesystem10
     </a>
   </li>
@@ -560,7 +508,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem11/" title="Somesystem11" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem11/" title="Somesystem11" class="md-nav__link">
       Somesystem11
     </a>
   </li>
@@ -572,7 +520,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem12/" title="Somesystem12" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem12/" title="Somesystem12" class="md-nav__link">
       Somesystem12
     </a>
   </li>
@@ -584,7 +532,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem14/" title="Somesystem14" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem14/" title="Somesystem14" class="md-nav__link">
       Somesystem14
     </a>
   </li>
@@ -596,7 +544,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem2/" title="Somesystem2" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem2/" title="Somesystem2" class="md-nav__link">
       Somesystem2
     </a>
   </li>
@@ -608,7 +556,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem3/" title="Somesystem3" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem3/" title="Somesystem3" class="md-nav__link">
       Somesystem3
     </a>
   </li>
@@ -620,7 +568,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem4/" title="Somesystem4" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem4/" title="Somesystem4" class="md-nav__link">
       Somesystem4
     </a>
   </li>
@@ -632,7 +580,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem5/" title="Somesystem5" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem5/" title="Somesystem5" class="md-nav__link">
       Somesystem5
     </a>
   </li>
@@ -644,7 +592,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem6/" title="Somesystem6" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem6/" title="Somesystem6" class="md-nav__link">
       Somesystem6
     </a>
   </li>
@@ -656,7 +604,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem7/" title="Somesystem7" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem7/" title="Somesystem7" class="md-nav__link">
       Somesystem7
     </a>
   </li>
@@ -668,7 +616,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem8/" title="Somesystem8" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem8/" title="Somesystem8" class="md-nav__link">
       Somesystem8
     </a>
   </li>
@@ -680,7 +628,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/somesystem9/" title="Somesystem9" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/somesystem9/" title="Somesystem9" class="md-nav__link">
       Somesystem9
     </a>
   </li>
@@ -692,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/systemcontext/" title="Systemcontext" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/systemcontext/" title="Systemcontext" class="md-nav__link">
       Systemcontext
     </a>
   </li>
@@ -704,7 +652,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/webportal/" title="Webportal" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/webportal/" title="Webportal" class="md-nav__link">
       Webportal
     </a>
   </li>
@@ -716,7 +664,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../diagrams/plantuml-misc/wetclinic/" title="Wetclinic" class="md-nav__link">
+    <a href="../diagrams/plantuml-misc/wetclinic/" title="Wetclinic" class="md-nav__link">
       Wetclinic
     </a>
   </li>
@@ -757,7 +705,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/admonition/" title="Admonition" class="md-nav__link">
+    <a href="../elements/admonition/" title="Admonition" class="md-nav__link">
       Admonition
     </a>
   </li>
@@ -769,7 +717,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/codehilite/" title="CodeHilite" class="md-nav__link">
+    <a href="../elements/codehilite/" title="CodeHilite" class="md-nav__link">
       CodeHilite
     </a>
   </li>
@@ -781,7 +729,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/footnotes/" title="Footnotes" class="md-nav__link">
+    <a href="../elements/footnotes/" title="Footnotes" class="md-nav__link">
       Footnotes
     </a>
   </li>
@@ -793,7 +741,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/metadata/" title="Metadata" class="md-nav__link">
+    <a href="../elements/metadata/" title="Metadata" class="md-nav__link">
       Metadata
     </a>
   </li>
@@ -805,7 +753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/permalinks/" title="Permalinks" class="md-nav__link">
+    <a href="../elements/permalinks/" title="Permalinks" class="md-nav__link">
       Permalinks
     </a>
   </li>
@@ -817,7 +765,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../elements/pymdown/" title="PyMdown Extensions" class="md-nav__link">
+    <a href="../elements/pymdown/" title="PyMdown Extensions" class="md-nav__link">
       PyMdown Extensions
     </a>
   </li>
@@ -853,7 +801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../notebooks/diagrams/" title="Diagrams" class="md-nav__link">
+    <a href="../notebooks/diagrams/" title="Diagrams" class="md-nav__link">
       Diagrams
     </a>
   </li>
@@ -865,7 +813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../notebooks/routing-list/" title="Routing list" class="md-nav__link">
+    <a href="../notebooks/routing-list/" title="Routing list" class="md-nav__link">
       Routing list
     </a>
   </li>
@@ -901,7 +849,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../theory/" title="Diagrams in those runbooks" class="md-nav__link">
+    <a href="../theory/" title="Diagrams in those runbooks" class="md-nav__link">
       Diagrams in those runbooks
     </a>
   </li>
@@ -929,43 +877,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#status" class="md-nav__link">
-    Status
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#context" class="md-nav__link">
-    Context
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
-    Decision
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#consequences" class="md-nav__link">
-    Consequences
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -977,17 +888,14 @@
               
                 
                 
-                <h1 id="4-use-mkdocs-as-a-knowledge-base-system">4. Use mkdocs as a knowledge base system<a class="headerlink" href="#4-use-mkdocs-as-a-knowledge-base-system" title="Permanent link">&para;</a></h1>
-<p>Date: 2020-11-03</p>
-<h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h2>
-<p>Accepted</p>
-<p>Supercedes <a href="../0002-use-sphinx-as-our-knowledge-base-system/">2. Use sphinx as our knowledge base system</a></p>
-<h2 id="context">Context<a class="headerlink" href="#context" title="Permanent link">&para;</a></h2>
-<p>The issue motivating this decision, and any context that influences or constrains the decision.</p>
-<h2 id="decision">Decision<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
-<p>The change that we're proposing or have agreed to implement.</p>
-<h2 id="consequences">Consequences<a class="headerlink" href="#consequences" title="Permanent link">&para;</a></h2>
-<p>What becomes easier or more difficult to do and any risks introduced by the change that will need to be mitigated.</p>
+                <h1 id="architecture-decision-records">Architecture Decision Records<a class="headerlink" href="#architecture-decision-records" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="decisions/0001-record-architecture-decisions/">1. Record architecture decisions</a></li>
+<li><a href="decisions/0002-use-sphinx-as-our-knowledge-base-system/">2. Use sphinx as our knowledge base system</a></li>
+<li><a href="decisions/0003-use-plantuml-for-diagramming/">3. Use PlantUML for diagramming</a></li>
+<li><a href="decisions/0004-use-mkdocs-as-a-knowledge-base-system/">4. Use mkdocs as a knowledge base system</a></li>
+<li><a href="decisions/0005-use-plantuml-for-diagramming-with-use-of-stdlib/">5. Use PlantUML for diagramming with use of stdlib</a></li>
+</ul>
                 
                   
                 
@@ -1009,7 +917,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../0003-use-plantuml-for-diagramming/" title="3. Use PlantUML for diagramming" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Welcome to MkDocs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1018,19 +926,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                3. Use PlantUML for diagramming
+                Welcome to MkDocs
               </span>
             </div>
           </a>
         
         
-          <a href="../0005-use-plantuml-for-diagramming-with-use-of-stdlib/" title="5. Use PlantUML for diagramming with use of stdlib" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="decisions/0001-record-architecture-decisions/" title="1. Record architecture decisions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                5. Use PlantUML for diagramming with use of stdlib
+                1. Record architecture decisions
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1053,7 +961,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://www.voronenko.info" target="_blank" rel="noopener" title="globe" class="md-footer-social__link fa fa-globe"></a>
     
@@ -1071,9 +979,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>app.initialize({version:"1.1.2",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.1.2",url:{base:".."}})</script>
       
     
   </body>
