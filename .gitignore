@@ -4,3 +4,4 @@ public
 *.tmp
 .vscode
 decisions.html
+docs/architecture/decisions/index.md

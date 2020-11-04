@@ -26,5 +26,6 @@ generate-adr:
 	adr-viewer --adr-path ./docs/architecture/decisions/ --output docs/architecture/decisions/decisions.html
 	sed -i 's/\.md"/\/index.html"/g' docs/architecture/decisions/decisions.html
 
-update-adr-toc:
-	./bin/adr generate toc > docs/architecture/index.md
+update-adr-toc: generate-adr
+	rm docs/architecture/decisions/index.md || true
+	./bin/adr generate toc > docs/architecture/decisions/index.md

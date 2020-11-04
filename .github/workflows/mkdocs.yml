@@ -18,7 +18,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
-          python-version: '3.8.6'
+          python-version: '3.6'
           architecture: 'x64'
 
       # todo: move to action
@@ -41,14 +41,14 @@ jobs:
           python3 -m pip install -U pipenv
           pipenv sync
 
-      - name: Generate adr toc
-        run: ./bin/adr generate toc > docs/architecture/index.md
-
       - name: Generate interactive view
         run: pipenv run adr-viewer --adr-path ./docs/architecture/decisions/ --output docs/architecture/decisions/decisions.html 
 
       - name: Patch adr toc
         run: sed -i 's/\.md"/\/index.html"/g' docs/architecture/decisions/decisions.html
+
+      - name: Generate adr toc
+        run: ./bin/adr generate toc > docs/architecture/index.md
 
       - name: Build site
         run: pipenv run mkdocs build
