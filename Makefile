@@ -33,22 +33,22 @@ update-adr-toc: generate-adr
 # https://www.dbml.org/
 install-dbml-cli-npm:
 	npm install -g @dbml/cli
-	echo dbml2sql schema.dbml
-	echo dbml2sql schema.dbml --mysql
-	echo "dbml2sql <path-to-dbml-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
-	echo sql2dbml dump.sql --postgres
-	echo sql2dbml --mysql dump.sql -o mydatabase.dbml
-	echo sql2dbml <path-to-sql-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]
+	@echo dbml2sql schema.dbml
+	@echo dbml2sql schema.dbml --mysql
+	@echo "dbml2sql <path-to-dbml-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
+	@echo sql2dbml dump.sql --postgres
+	@echo sql2dbml --mysql dump.sql -o mydatabase.dbml
+	@echo "sql2dbml <path-to-sql-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
 
 install-dbml-cli-yarn:
 	yarn global add @dbml/cli
 	npm install -g @dbml/cli
-	echo dbml2sql schema.dbml
-	echo dbml2sql schema.dbml --mysql
-	echo "dbml2sql <path-to-dbml-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
-	echo sql2dbml dump.sql --postgres
-	echo sql2dbml --mysql dump.sql -o mydatabase.dbml
-	echo sql2dbml <path-to-sql-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]
+	@echo dbml2sql schema.dbml
+	@echo dbml2sql schema.dbml --mysql
+	@echo "dbml2sql <path-to-dbml-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
+	@echo sql2dbml dump.sql --postgres
+	@echo sql2dbml --mysql dump.sql -o mydatabase.dbml
+	@echo "sql2dbml "<path-to-sql-file> [--mysql|--postgres] [-o|--out-file <output-filepath>]"
 
 install-dbtools-terra-er:
 	curl -sLo ~/dotfiles/bin/terra.jar https://github.com/rterrabh/TerraER/releases/download/TerraER3.11/TerraER3.11.jar
