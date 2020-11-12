@@ -1,0 +1,26 @@
+#!/bin/sh
+
+WORKSPACE=$(
+  cd $(dirname "$0")
+  pwd
+)
+
+
+SCHEMASPYJAR=$WORKSPACE/schemaspy.jar
+
+if [ -n "${JAVA_HOME}" ] && [ -x "${JAVA_HOME}/bin/java" ] ; then
+    JAVA="${JAVA_HOME}/bin/java"
+elif [ -x /usr/bin/java ] ; then
+    JAVA=/usr/bin/java
+else
+    echo Cannot find JVM
+    exit 1
+fi
+
+
+if [ ! -f $SCHEMASPYJAR ]; then
+    echo "Install schemaspy tool into $SCHEMASPYJAR from https://github.com/schemaspy/schemaspy/releases" >&2
+    exit 1
+fi
+
+$JAVA -jar ${SCHEMASPYJAR} ${@}
