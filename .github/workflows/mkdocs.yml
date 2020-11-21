@@ -59,4 +59,5 @@ jobs:
           publish_dir: ./public
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
-
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
