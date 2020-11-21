@@ -55,3 +55,10 @@ install-dbtools-terra-er:
 
 install-dbtools-schemaspy:
 	curl -sLo ~/dotfiles/bin/schemaspy.jar https://github.com/schemaspy/schemaspy/releases/download/v6.1.0/schemaspy-6.1.0.jar
+
+
+docker-build-local:
+	docker build -t runbooks-mkdocs:local .
+docker-push-local:
+	docker tag runbooks-mkdocs:local voronenko/runbooks-mkdocs:latest
+	docker push voronenko/runbooks-mkdocs:latest

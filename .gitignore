@@ -3,5 +3,7 @@ p-env
 public
 *.tmp
 .vscode
+.idea
+!.vscode/*.code-snippets
 decisions.html
 docs/architecture/decisions/index.md

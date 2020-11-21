@@ -1,0 +1,44 @@
+{
+    "mkdocs-admolition": {
+        "prefix": "mkdocs-admolition",
+        "body": [
+            "!!! note \"$1\"",
+            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod",
+            "    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor",
+            "    massa, nec semper lorem quam in massa.",
+            "$2"
+        ],
+        "description": "Admolition"
+    },
+    "mkdocs-footnote": {
+        "prefix": "mkdocs-footnote",
+        "body": [
+            "Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit",
+            "",
+            "[^1]:",
+            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod",
+            "    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor",
+            "    massa, nec semper lorem quam in massa.",
+            "$2"
+        ],
+        "description": "Footnote"
+    },
+    "mkdocs-metadata-inserttop": {
+        "prefix": "mkdocs-metadata-inserttop",
+        "body": [
+            "---",
+            "title: Lorem ipsum dolor sit amet",
+            "description: Nullam urna elit, malesuada eget finibus ut, ac tortor.",
+            "path: path/to/file",
+            "source: file.js",
+            "---",
+            "$2"
+        ],
+        "description": "Page metadata"
+    }
+
+
+}
+
+
+
