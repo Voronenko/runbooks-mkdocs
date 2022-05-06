@@ -35,7 +35,7 @@ Now you can add fragment to your github workflow pipeline
 Please find idea for automatic gitlab pages publishing on a pipeline below
 
 ```yaml
-image: python:3.8-buster
+image: python:3.9-buster
 # CD/CI example for gitlab
 # TODO: Introduce image with pre-built tools for easy run
 before_script:

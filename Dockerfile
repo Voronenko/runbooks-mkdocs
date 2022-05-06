@@ -71,12 +71,6 @@ ENV PATH=${PATH}:${HOME}/.local/bin
 ## VERSIONS ##
 ENV PATH=${PATH}:${JAVA_HOME}/bin
 
-RUN \
-    mvn --version && \
-    # python -V && \
-    python3 -V && \
-    pip3 --version
-
 ## gradle uncomment if needed
 #ARG GRADLE_INSTALL_BASE=${GRADLE_INSTALL_BASE:-/opt/gradle}
 #ARG GRADLE_VERSION=${GRADLE_VERSION:-6.0.1}
@@ -104,7 +98,10 @@ RUN \
 #    apt-get install -y nodejs
 
 # Extra-tools
-RUN apt-get install -y graphviz
+RUN apt-get update && \
+    apt-get install -y graphviz && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 RUN curl -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download > /usr/local/bin/plantuml.jar
 RUN curl -L https://github.com/schemaspy/schemaspy/releases/download/v6.1.0/schemaspy-6.1.0.jar > /usr/local/bin/schemaspy.jar
 ADD bin/plantuml /usr/local/bin
@@ -132,8 +129,8 @@ RUN mkdir -p ${NPM_CONFIG_PREFIX} ${HOME}/.config ${HOME}/.npm && \
     chown ${USER}:${USER} -R ${NPM_CONFIG_PREFIX} ${HOME}/.config ${HOME}/.npm
 
 
-# drop user
-USER ${USER}
-WORKDIR ${HOME}
+# drop user privileges
+# USER ${USER}
+# WORKDIR ${HOME}
 
 CMD ["/bin/bash"]

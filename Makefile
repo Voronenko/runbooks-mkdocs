@@ -1,5 +1,13 @@
 init:
-	pipenv install --python 3
+	pipenv install --python 3.9
+
+conda-environment-create:
+	conda create --name py39 python=3.9
+
+init-conda:
+	conda env list
+	echo note location of the environment, like /home/slavko/miniconda3/envs/py39
+	pipenv shell --python /home/slavko/miniconda3/envs/py39/bin/python3.9
 
 reset-from-requirements:
 	pipenv install -r ./requirements.txt
