@@ -58,13 +58,13 @@ extra:
   feature:
     tabs: false
   social:
-    - type: globe
+    - icon: fontawesome/solid/globe
       link: https://www.voronenko.info
-    - type: github-alt
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/voronenko
-    - type: twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/slavko
-    - type: linkedin
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/voronenkovyacheslav/
 
 markdown_extensions:
