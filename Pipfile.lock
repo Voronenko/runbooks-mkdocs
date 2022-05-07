@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fd1edeb881c5b48a691fba2dbb7bd99d6cb2de06d9a8384ceea07d85dc7cbf48"
+            "sha256": "2d4ab3a42f4ff29212775307790abaeb52ae197d726ab92da507342d87e1d982"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -637,6 +637,14 @@
             "index": "pypi",
             "version": "==2.8.2"
         },
+        "python-gitlab": {
+            "hashes": [
+                "sha256:251b63f0589d51f854516948c84e9eb8df26e1e9dea595cf86b43f17c43007dd",
+                "sha256:6180b81ee2f265ad8d8412956a1740b4d3ceca7b28ae2f707dfe62375fed0082"
+            ],
+            "index": "pypi",
+            "version": "==3.4.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:1e760e2fe6a8163bc0b3d9a19c4f84342afa0a2affebfaa84b01b978a02ecaa7",
@@ -752,6 +760,13 @@
             ],
             "index": "pypi",
             "version": "==2.27.1"
+        },
+        "requests-toolbelt": {
+            "hashes": [
+                "sha256:380606e1d10dc85c3bd47bf5a6095f815ec007be7a8b69c878507068df059e6f",
+                "sha256:968089d4584ad4ad7c171454f0a5c6dac23971e9472521ea3b6d49d610aa6fc0"
+            ],
+            "version": "==0.9.1"
         },
         "s3transfer": {
             "hashes": [

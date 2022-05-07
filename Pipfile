@@ -83,6 +83,7 @@ fontawesome-markdown = "*"
 mknotebooks = "*"
 ipython-genutils = "*"
 adr-viewer = "*"
+python-gitlab = "*"
 
 [requires]
 python_version = "3.9"

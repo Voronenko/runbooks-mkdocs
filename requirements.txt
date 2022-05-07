@@ -2,7 +2,10 @@ adr-tools-python==1.0.3
 adr-viewer==1.3.0
 boto3==1.22.8
 diagrams==0.8.2
+fontawesome-markdown==0.2.6
+ipython-genutils==0.2.0
 jupyterlab-pygments==0.1.2
+MarkupSafe==2.0.1
 mkdocs==1.3.0
 mkdocs-autolinks-plugin==0.5.0
 mkdocs-blog-plugin==0.25
@@ -18,3 +21,4 @@ mkdocs-table-reader-plugin==1.0.0
 mknotebooks==0.5.0
 plantuml-markdown==3.5.2
 pymdown-extensions==9.4
+python-gitlab==3.4.0
